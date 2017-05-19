@@ -53,7 +53,7 @@ Mail body
         s.starttls()
         s.login('your_email_add@gmail.com','password')
         s.sendmail('your_email_add@gmail.com',sendto, msg.as_string())
-        print('successfully sent')
+        print('successfully sent to '+name+' at '+sendto)
         s.quit()
     except:
         print('Error')
