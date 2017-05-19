@@ -28,8 +28,8 @@ for x in range(len(arr)):
     msg['Subject'] = 'email subject'
     msg['From'] = 'your_email_address@gmail.com'
     msg['To'] = arr[x][2]
-    name = arr[x][1]
-    company_name=arr[x][0]
+    name = string.capwords(arr[x][1])
+    company_name = string.capwords(arr[x][0])
     sendto = arr[x][2]
     # The main body is just another attachment
 
